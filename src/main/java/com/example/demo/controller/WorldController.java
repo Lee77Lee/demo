@@ -12,13 +12,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class WorldController {
 
     @GetMapping("/1")
-    public ResponseEntity<String> getHello() {
+    public ResponseEntity<String> get1() {
         String message = "Hello 1!";
         return new ResponseEntity<>(message, HttpStatus.OK);
     }
 
     @GetMapping("/2")
-    public ResponseEntity<String> getWorld() {
+    public ResponseEntity<String> get2() {
         String message = "Hello 2!";
         return new ResponseEntity<>(message, HttpStatus.OK);
     }
